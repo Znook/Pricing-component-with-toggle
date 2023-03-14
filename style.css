@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: whitesmoke;
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 150px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.parent {
+  color: #555;
+  background: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
+.card h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.card h1 span {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.card li {
+  border-top: 2px solid hsl(240, 78%, 98%);
+  padding: 18px;
+}
+
+.card li:last-child {
+  border-bottom: 2px solid hsl(240, 78%, 98%);
+}
+
+.btn {
+  color: white;
+  background: linear-gradient(to left, #a3a8f0, #696fdd);
+  border-radius: 5px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  margin-top: 24px;
+  padding: 10px 25px;
+}
+
+.btn:hover {
+  color: #7980c2;
+  background: transparent;
+  border: 1px solid #888;
+  box-shadow: none;
+}
+
+/* MIDDLE STYLING */
+
+.parent:nth-child(2) {
+  color: white;
+  background: linear-gradient(#a3a8f0, #696fdd);
+  height: 470px;
+  scale: 1.125;
+}
+
+.btn2 {
+  color: #696fdd;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  margin-top: 24px;
+  padding: 10px 25px;
+}
+
+.btn2:hover {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: none;
+}
+
+@media (max-width: 678px) {
+  .flex {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .parent:nth-child(2) {
+    scale: 1;
+    height: inherit;
+  }
+}
